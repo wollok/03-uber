@@ -1,0 +1,28 @@
+import choferes.*
+import pasajeros.*
+import viajes.*
+import fixture.*
+
+test "dani, kiki y nico pueden llevar a dodain a quilmes" {
+	assert.equals(
+		#{dani, kiki, nico}, 
+		dodain.choferesQueLoLlevanA(fixture.viajeAQuilmes()).asSet()
+	)
+}
+
+
+test "dani puede hacer el viaje que quiere dodain" {
+	const viaje = fixture.viajeAQuilmes()
+	assert.that(dani.puedeTomar(viaje))
+}
+
+test "nico puede hacer el viaje que quiere dodain" {
+	const viaje = fixture.viajeAQuilmes()
+	assert.that(nico.puedeTomar(viaje))
+}
+
+test "kiki puede hacer el viaje que quiere dodain" {
+	const viaje = fixture.viajeAQuilmes()
+	assert.that(kiki.puedeTomar(viaje))
+}
+

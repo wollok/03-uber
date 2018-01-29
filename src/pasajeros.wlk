@@ -7,6 +7,6 @@ object dodain {
 
 	method esAlto() = altura > 1.8
 
-	method choferesQueLoLlevanA(viaje) = 
-		choferes.filter({ chofer => chofer.puedeTomar(viaje) })
+	method choferesQueLoLlevanA(viaje) = choferes.filter({ chofer => chofer.puedeTomar(viaje) })
+
 }

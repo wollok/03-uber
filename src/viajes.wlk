@@ -1,8 +1,9 @@
+import pasajeros.*
 
 object viajeAQuilmes {
 
-	var property pasajero
-	var property distancia 
+	var property pasajero = dodain
+	var property distancia = 15
 	
 	method porAutopista() = true
 	

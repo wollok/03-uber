@@ -4,28 +4,19 @@ import viajes.*
 
 describe "Test de choferes" {
 
-	var viajeAQuilmes = self.viajeAQuilmes()
-
-	method viajeAQuilmes() {
-		const viaje = viajeAQuilmes
-		viaje.distancia(15)
-		viaje.pasajero(dodain)
-		return viaje
-	}
-
 	test "dani, kiki y nico pueden llevar a dodain a quilmes" {
 		assert.equals(#{ dani, kiki, nico }, dodain.choferesQueLoLlevanA(viajeAQuilmes).asSet())
 	}
 
-	test "dani puede hacer el viaje que quiere dodain" {
+	test "dani puede hacer el viajeAQuilmes que quiere dodain" {
 		assert.that(dani.puedeTomar(viajeAQuilmes))
 	}
 
-	test "nico puede hacer el viaje que quiere dodain" {
+	test "nico puede hacer el viajeAQuilmes que quiere dodain" {
 		assert.that(nico.puedeTomar(viajeAQuilmes))
 	}
 
-	test "kiki puede hacer el viaje que quiere dodain" {
+	test "kiki puede hacer el viajeAQuilmes que quiere dodain" {
 		assert.that(kiki.puedeTomar(viajeAQuilmes))
 	}
 

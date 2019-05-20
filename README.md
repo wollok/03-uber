@@ -1,4 +1,7 @@
 
+ 
+[![Build Status](https://travis-ci.org/wollok/uber.svg?branch=master)](https://travis-ci.org/wollok/uber)
+
 # Ejercicio Uber - Colecciones
 
 ## Planteo general
